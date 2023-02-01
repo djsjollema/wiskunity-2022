@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: max(50vw, 1000px);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+
+}
+
+.lesson{
+    display:flex;
+    flex-direction: column;
+   border: 2px inset black;
+    
+
+}
+
+.title{
+    background-color: gray;
+    color: aliceblue;
+    font-size: large;
+    text-align: center;
+    padding: 2px;
+}
+
+.info{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    flex:1 100%;
+
+}
+
+.illustration{
+    order: 1;
+    background-color: black;
+}
+
+.description{
+    order: 2;
+    background-color: white;
+    padding: 1em;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}

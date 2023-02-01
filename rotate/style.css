@@ -1,0 +1,71 @@
+html{
+    background-image: url(media/unityBackground.jpg);
+}
+
+a {
+    color:#ADC8FE;
+    text-decoration: none;
+}
+
+a:hover{
+    #E4EDFF;
+}
+
+.grid-container {   
+    width: 80%;
+    margin: auto;
+    display: grid;   
+    grid-template-columns: 1fr 1fr;   
+    grid-template-rows: repeat(8, 1fr);    
+} 
+.grid-item {   
+    display: grid;
+    background-color: #f1f1f1;   
+    border: 1px solid #999;  
+    text-align: center; 
+    margin: 5px;
+    background-color: black;  
+}
+
+.subgrid-container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr;  
+    grid-template-rows: 1fr 5fr;
+    background-color:  #011A4D;
+    border: #022A79 solid 2px;
+}
+
+.subgrid-index{
+    grid-row: 1 /4;
+    grid-column: 1;
+    color:#E4EDFF;
+    font-size: xx-large;
+    padding-top:4em;
+    border-right: 2px #ADC8FE solid;
+    
+}
+
+.title{
+    grid-column: 2 /4;
+    padding: 10px;
+    color: #E4EDFF;
+    text-align:center;
+    font-size: xx-large;
+    border-bottom: 2px #ADC8FE solid;
+}
+
+.definition{
+    grid-column: 2;
+    grid-row: 2;
+    color: #E4EDFF;
+    padding: 5px;
+    font-size: medium;
+    text-align: left;
+}
+
+.visualisation{
+    grid-column: 3;
+    grid-row: 2  ;
+    max-width: 320px;
+}
+
