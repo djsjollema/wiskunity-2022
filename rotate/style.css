@@ -1,71 +1,54 @@
-html{
-    background-image: url(media/unityBackground.jpg);
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
 }
 
-a {
-    color:#ADC8FE;
-    text-decoration: none;
+.container{
+    width: max(50vw, 1300px);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+
 }
 
-a:hover{
-    #E4EDFF;
-}
-
-.grid-container {   
-    width: 80%;
-    margin: auto;
-    display: grid;   
-    grid-template-columns: 1fr 1fr;   
-    grid-template-rows: repeat(8, 1fr);    
-} 
-.grid-item {   
-    display: grid;
-    background-color: #f1f1f1;   
-    border: 1px solid #999;  
-    text-align: center; 
-    margin: 5px;
-    background-color: black;  
-}
-
-.subgrid-container{
-    display: grid;
-    grid-template-columns: 1fr 5fr 5fr;  
-    grid-template-rows: 1fr 5fr;
-    background-color:  #011A4D;
-    border: #022A79 solid 2px;
-}
-
-.subgrid-index{
-    grid-row: 1 /4;
-    grid-column: 1;
-    color:#E4EDFF;
-    font-size: xx-large;
-    padding-top:4em;
-    border-right: 2px #ADC8FE solid;
-    
+.lesson{
+    display:flex;
+    flex-direction: column;
+   border: 2px outset midnightblue;
+   background-color: aliceblue;
+   border-radius: 5px;
 }
 
 .title{
-    grid-column: 2 /4;
+    background-color: gray;
+    color: aliceblue;
+    font-size: large;
+    text-align: center;
+    padding: 2px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+.illustration{
+    flex: 1;
+}
+
+.description{
+    flex: 1;
+    background-color: white;
     padding: 10px;
-    color: #E4EDFF;
-    text-align:center;
-    font-size: xx-large;
-    border-bottom: 2px #ADC8FE solid;
+    width:300px;
 }
 
-.definition{
-    grid-column: 2;
-    grid-row: 2;
-    color: #E4EDFF;
-    padding: 5px;
-    font-size: medium;
-    text-align: left;
+p{
+    margin: 0;
+    padding: 0;
 }
-
-.visualisation{
-    grid-column: 3;
-    grid-row: 2  ;
-    max-width: 320px;
-}
-
